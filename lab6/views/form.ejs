@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    
+	</head>
+	  
+	<body>
+		<h2>Form</h2>
+	    <form action="/contactus" method="POST">
+	    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+	    <% if (errors) { %>
+			<p style="color: red;">required!</p>
+		<% } %>
+	    <label>Full name:</label><input type="text" name="fullname">
+	    <br/>
+	    <label>Type:</label><select name="type"><option value="suggession">suggession</option><option value="complaint">complaint</option></select>
+	    <br/>
+	    <label>Message:</label><textarea name="message"></textarea>
+	    <input type="submit" value="Ok">
+	    </form>
+	</body>
+</html>
