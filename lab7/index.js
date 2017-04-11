@@ -23,8 +23,8 @@ app.get('/', function(req, res, next){
 	    dec += decipher.final('utf8');
         res.send(dec);
         db.close();
-    })
-})
+    });
+});
 
 
 
