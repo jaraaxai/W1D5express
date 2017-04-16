@@ -1,0 +1,8 @@
+> db.locations.createIndex({ loc: "2d"})
+{
+	"createdCollectionAutomatically" : false,
+	"numIndexesBefore" : 1,
+	"numIndexesAfter" : 2,
+	"ok" : 1
+}
+>

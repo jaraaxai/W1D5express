@@ -1,0 +1,7 @@
+{ "name" : "Argiro", "category" : "School", "loc": { "lat" : 41.0177934185792, "long" : -91.96728829522709 } }
+{ "name" : "Library", "category" : "School", "loc": { "lat" : 41.018052457079726, "long" : -91.96880306111149 }}
+{ "name" : "Building 140", "category" : "Dorm", "loc": { "lat" : 41.02215646239298, "long" : -91.96663310739143 }}
+{ "name" : "Building 141", "category" : "Dorm", "loc": { "lat" : 41.02267855124218, "long" : -91.96648153926856 }}
+{ "name" : "Building 142", "category" : "Dorm", "loc": { "lat" : 41.023216824559626, "long" : -91.96634942881781 }}
+{ "name" : "Building 143", "category" : "Dorm", "loc": { "lat" : 41.022411436534085, "long" : -91.96749404985815 }}
+{ "name" : "Building 144", "category" : "Dorm", "loc": { "lat" : 41.02296185353661, "long" : -91.96734584615336 }}

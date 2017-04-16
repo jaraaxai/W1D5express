@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    
+	</head>
+	  
+	<body>
+		<h2>Edit</h2>
+	    <form action="/update" method="POST">
+	    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+	    <input type="hidden" name="id" value="<%= location._id %>">
+	    <% if (errors) { %>
+			<p style="color: red;">required!</p>
+		<% } %>
+	    <label>Name:</label><input type="text" name="fullname" value="<%= location.name %>">
+	    <br/>
+	    <label>Type:</label>
+	    	<select name="type">
+	    		<option value="school" <% if (location.category == 'school') { %> selected="selected"<% } %> >School</option>
+	    		<option value="dorm" <% if (location.category == 'dorm') { %> selected="selected"<% } %> >Dorm</option>
+	    	</select>
+	    <br/>
+	    <label>Latitude:</label><input type="text" name="lat" value="<%= location.loc.lat %>">
+	    <br/>
+	    <label>Longitude:</label><input type="text" name="lon" value="<%= location.loc.long %>">
+	    
+	    <input type="submit" value="Ok">
+	    </form>
+
+	</body>
+</html>

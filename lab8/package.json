@@ -1,0 +1,22 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "985524",
+  "main": "index.js",
+  "scripts": {
+    "test": "Miga"
+  },
+  "author": "Miga",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "express-validator": "^3.1.3",
+    "mongodb": "^2.2.25",
+    "mongoskin": "^2.1.0"
+  }
+}

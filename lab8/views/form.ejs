@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    
+	</head>
+	  
+	<body>
+		<h2>Add</h2>
+	    <form action="/add" method="POST">
+	    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+	    <input type="hidden" name="id" value="">
+	    <% if (errors) { %>
+			<p style="color: red;">required!</p>
+		<% } %>
+	    <label>Name:</label><input type="text" name="fullname">
+	    <br/>
+	    <label>Type:</label><select name="type"><option value="school">School</option><option value="dorm">Dorm</option></select>
+	    <br/>
+	    <label>Latitude:</label><input type="text" name="lat">
+	    <br/>
+	    <label>Longitude:</label><input type="text" name="lon">
+	    
+	    <input type="submit" value="Ok">
+	    </form>
+
+	    <hr/>
+	    <h3>List</h3>
+	    <ul>
+	    <% for(var i=0; i<results.length; i++) { %>
+	        <li>
+	            <a href='/edit/<%= results[i]._id %>'>
+	                <%= results[i].name %>
+	            </a>
+	            <a href="/delete/<%= results[i]._id %>"><img src="http://icons.veryicon.com/png/System/Silk/database%20delete.png"></a>
+	        </li>
+	    <% } %>
+	</ul>
+	</body>
+</html>
